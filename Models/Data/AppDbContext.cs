@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Models.Domain;
+using WebAPI.Models.Domain;
 namespace WebAPI.Models.Data
 {
 		public class AppDbContext : DbContext

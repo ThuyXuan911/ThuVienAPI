@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Models.Domain
+namespace WebAPI.Models.Domain
 {
 	public class Book
 	{

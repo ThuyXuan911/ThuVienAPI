@@ -1,4 +1,4 @@
-﻿using Models.Domain;
+﻿using WebAPI.Models.Domain;
 using System.ComponentModel.DataAnnotations;
 
 namespace WebAPI.Models.Domain

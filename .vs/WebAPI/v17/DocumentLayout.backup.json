@@ -50,8 +50,8 @@
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\LAPTOP\\source\\repos\\WebAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\LAPTOP\\source\\repos\\WebAPI\\appsettings.json*",
-              "RelativeToolTip": "appsettings.json*",
+              "ToolTip": "C:\\Users\\LAPTOP\\source\\repos\\WebAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-09-23T08:44:16.304Z",
@@ -67,8 +67,7 @@
               "RelativeToolTip": "Migrations\\20260923084244_InitialDatabaseMigration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T08:42:44.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T08:42:44.997Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T08:37:14.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T08:37:14.187Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "Models\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwBwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T08:01:31.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T08:01:31.981Z"
             },
             {
               "$type": "Document",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "Models\\Domain\\Book.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAA5wC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T07:58:39.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T07:58:39.761Z"
             }
           ]
         }

@@ -1,4 +1,4 @@
-﻿using Models.Domain;
+﻿using WebAPI.Models.Domain;
 
 namespace WebAPI.Models.Domain
 {
