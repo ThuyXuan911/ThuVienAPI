@@ -35,6 +35,12 @@ namespace WebAPI.Controllers
 		[HttpPost("add-publisher")]
 		public IActionResult AddPublisher([FromBody] AddPublisherRequestDTO addPublisherRequestDTO)
 		{
+			var isDuplicate = _dbContext.Publishers.Any(p => p.Name == addPublisherRequestDTO.Name);
+			if (isDuplicate)
+			{
+				return BadRequest("Tên nhà xuất bản đã tồn tại.");
+			}
+
 			var publisherAdd = _publisherRepository.AddPublisher(addPublisherRequestDTO);
 			return Ok(publisherAdd);
 		}
@@ -49,6 +55,12 @@ namespace WebAPI.Controllers
 		[HttpDelete("delete-publisher-by-id/{id}")]
 		public IActionResult DeletePublisherById(int id)
 		{
+			var hasBooks = _dbContext.Books.Any(b => b.PublisherID == id);
+			if (hasBooks)
+			{
+				return BadRequest("Không thể xóa Publisher vì vẫn còn sách tham chiếu.");
+			}
+
 			var publisherDelete = _publisherRepository.DeletePublisherById(id);
 			return Ok();
 		}

@@ -35,6 +35,12 @@ namespace WebAPI.Controllers
 		[HttpPost("add-author")]
 		public ActionResult AddAuthors([FromBody] AddAuthorRequestDTO addAuthorRequestDTO)
 		{
+			var isDuplicate = _dbContext.Authors.Any(a => a.FullName == addAuthorRequestDTO.FullName);
+			if (isDuplicate)
+			{
+				return BadRequest("Tên tác giả đã tồn tại trong hệ thống.");
+			}
+
 			var authorAdd = _authorRepository.AddAuthor(addAuthorRequestDTO);
 			return Ok();
 		}
@@ -49,6 +55,12 @@ namespace WebAPI.Controllers
 		[HttpDelete("delete-author-by-id/{id}")]
 		public IActionResult DeleteAuthorById(int id)
 		{
+			var hasBooks = _dbContext.Books_Authors.Any(ba => ba.AuthorId == id);
+			if (hasBooks)
+			{
+				return BadRequest("Hãy gỡ liên kết trong Book_Author trước khi xóa.");
+			}
+
 			var authorDelete = _authorRepository.DeleteAuthorById(id);
 			return Ok();
 		}
