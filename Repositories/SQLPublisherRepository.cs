@@ -15,18 +15,11 @@ namespace WebAPI.Repositories
 
 		public List<PublisherDTO> GetAllPublishers()
 		{
-			var allPublishersDomain = _dbContext.Publishers.ToList();
-			var allPublisherDTO = new List<PublisherDTO>();
-
-			foreach (var publisherDomain in allPublishersDomain)
+			return _dbContext.Publishers.Select(p => new PublisherDTO
 			{
-				allPublisherDTO.Add(new PublisherDTO()
-				{
-					Id = publisherDomain.Id,
-					Name = publisherDomain.Name
-				});
-			}
-			return allPublisherDTO;
+				Id = p.Id,
+				Name = p.Name
+			}).ToList();
 		}
 
 		public PublisherNoIdDTO GetPublisherById(int id)

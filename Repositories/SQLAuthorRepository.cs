@@ -16,18 +16,11 @@ namespace WebAPI.Repositories
 
 		public List<AuthorDTO> GetAllAuthors()
 		{
-			var allAuthorsDomain = _dbContext.Authors.ToList();
-			var allAuthorDTO = new List<AuthorDTO>();
-
-			foreach (var authorDomain in allAuthorsDomain)
+			return _dbContext.Authors.Select(a => new AuthorDTO
 			{
-				allAuthorDTO.Add(new AuthorDTO()
-				{
-					Id = authorDomain.Id,
-					FullName = authorDomain.FullName
-				});
-			}
-			return allAuthorDTO;
+				Id = a.Id,
+				FullName = a.FullName
+			}).ToList();
 		}
 
 		public AuthorNoIdDTO GetAuthorById(int id)

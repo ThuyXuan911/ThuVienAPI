@@ -6,7 +6,7 @@ namespace WebAPI.Models.DTO
 	{
 		[Required]
 		[MinLength(10)]
-		[RegularExpression(@"^[a-zA-Z0-9\s]*$", ErrorMessage = "Không được chứa ký tự đặc biệt.")]
+		[RegularExpression(@"^[\p{L}0-9\s]*$", ErrorMessage = "Không được chứa ký tự đặc biệt.")]
 		public string? Title { get; set; }
 		public string? Description { get; set; }
 		public bool IsRead { get; set; }
