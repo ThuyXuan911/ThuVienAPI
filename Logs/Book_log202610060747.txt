@@ -1,0 +1,9 @@
+2026-10-06 07:47:17.987 +07:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-10-06 07:47:18.079 +07:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [BookAuthDB] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+2026-10-06 07:47:18.124 +07:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+DROP DATABASE [BookAuthDB];

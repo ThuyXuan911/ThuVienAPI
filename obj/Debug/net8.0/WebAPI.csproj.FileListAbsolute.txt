@@ -135,3 +135,14 @@ C:\Users\LAPTOP\source\repos\WebAPI\obj\Debug\net8.0\refint\WebAPI.dll
 C:\Users\LAPTOP\source\repos\WebAPI\obj\Debug\net8.0\WebAPI.pdb
 C:\Users\LAPTOP\source\repos\WebAPI\obj\Debug\net8.0\WebAPI.genruntimeconfig.cache
 C:\Users\LAPTOP\source\repos\WebAPI\obj\Debug\net8.0\ref\WebAPI.dll
+C:\Users\LAPTOP\source\repos\WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\LAPTOP\source\repos\WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\LAPTOP\source\repos\WebAPI\bin\Debug\net8.0\Serilog.dll
+C:\Users\LAPTOP\source\repos\WebAPI\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\LAPTOP\source\repos\WebAPI\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\LAPTOP\source\repos\WebAPI\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\LAPTOP\source\repos\WebAPI\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\LAPTOP\source\repos\WebAPI\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\LAPTOP\source\repos\WebAPI\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\LAPTOP\source\repos\WebAPI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\LAPTOP\source\repos\WebAPI\bin\Debug\net8.0\Serilog.Sinks.File.dll

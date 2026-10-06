@@ -36,13 +36,9 @@ namespace WebAPI.Repositories
 				{
 					allBooks = allBooks.Where(x => x.Title.Contains(filterQuery));
 				}
-			}
-
-			if (string.IsNullOrWhiteSpace(sortBy) == false)
-			{
-				if (sortBy.Equals("title", StringComparison.OrdinalIgnoreCase))
+				else if (filterOn.Equals("description", StringComparison.OrdinalIgnoreCase))
 				{
-					allBooks = isAscending ? allBooks.OrderBy(x => x.Title) : allBooks.OrderByDescending(x => x.Title);
+					allBooks = allBooks.Where(x => x.Description != null && x.Description.Contains(filterQuery));
 				}
 			}
 
@@ -149,7 +145,7 @@ namespace WebAPI.Repositories
 				_dbContext.Books.Remove(bookDomain);
 				_dbContext.SaveChanges();
 				return bookDomain;
-			}
+			}																																
 			return null;
 		}
 	}
